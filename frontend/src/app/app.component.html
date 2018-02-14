@@ -1,0 +1,29 @@
+<header class="header-6 header">
+    <div class="branding">
+        <a href="/" class="nav-link">
+            <clr-icon shape="bullseye"></clr-icon>
+            <span class="title">Choose the best</span>
+        </a>
+    </div>
+
+    <div class="header-nav">
+        <div class="nav-link nav-text"><button class="btn btn-default header-btn" [routerLink]="['/agents']" routerLinkActive="active">Agents</button></div>
+    </div>
+    <div class="header-nav">
+        <div class="nav-link nav-text"><button class="btn btn-default header-btn" [routerLink]="['/pc']" routerLinkActive="active">PC</button></div>
+        <div class="nav-link nav-text"><button class="btn btn-default header-btn" [routerLink]="['/maxSat']" routerLinkActive="active">Max-SAT</button></div>
+    </div>
+    <div class="header-nav">
+        <div class="nav-link nav-text"><button class="btn btn-default header-btn" [routerLink]="['/results']" routerLinkActive="active">Results</button></div>
+    </div>
+
+    <div class="header-actions">
+        <div class="header-nav">
+            <div class="nav-link"><button class="btn btn-default header-btn" [routerLink]="['/dictionary']" routerLinkActive="active"><clr-icon shape="book" class=""></clr-icon></button></div>
+        </div>
+    </div>
+
+</header>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
